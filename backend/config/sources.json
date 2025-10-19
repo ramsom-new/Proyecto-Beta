@@ -1,0 +1,90 @@
+[
+    {
+        "name": "Infobae",
+        "url": "https://www.infobae.com",
+        "selector": "h1, h2, h3",
+        "method": "requests",
+        "active": true,
+        "type": "local"
+    },
+    {
+        "name": "Clarin",
+        "url": "https://www.clarin.com",
+        "selector": "h1, h2, h3",
+        "method": "selenium",
+        "active": true,
+        "type": "local"
+    },
+    {
+        "name": "LaNacion",
+        "url": "https://www.lanacion.com.ar",
+        "selector": "h1, h2, h3",
+        "method": "selenium",
+        "active": true,
+        "type": "local"
+    },
+    {
+        "name": "Pagina12",
+        "url": "https://www.pagina12.com.ar",
+        "selector": "h1, h2, h3",
+        "method": "selenium",
+        "active": true,
+        "type": "local"
+    },
+    {
+        "name": "ElDestape",
+        "url": "https://www.eldestapeweb.com",
+        "selector": "h1, h2, h3",
+        "method": "selenium",
+        "active": true,
+        "type": "local"
+    },
+    {
+        "name": "ElCronista",
+        "url": "https://www.cronista.com",
+        "selector": "h1, h2, h3",
+        "method": "selenium",
+        "active": true,
+        "type": "local"
+    },
+    {
+        "name": "ElEconomista",
+        "url": "https://eleconomista.com.ar",
+        "selector": "h1, h2, h3",
+        "method": "selenium",
+        "active": true,
+        "type": "local"
+    },
+    {
+        "name": "Ambito",
+        "url": "https://www.ambito.com",
+        "selector": "h1, h2, h3",
+        "method": "selenium",
+        "active": true,
+        "type": "local"
+    },
+    {
+        "name": "BBC Mundo",
+        "url": "https://www.bbc.com/mundo",
+        "selector": "h1, h2, h3",
+        "method": "selenium",
+        "active": false,
+        "type": "international"
+    },
+    {
+        "name": "El Pais",
+        "url": "https://elpais.com/internacional/",
+        "selector": "h1, h2, h3",
+        "method": "selenium",
+        "active": false,
+        "type": "international"
+    },
+    {
+        "name": "Le Mond",
+        "url": "https://www.lemonde.fr",
+        "selector": "h1, h2, h3",
+        "method": "selenium",
+        "active": true,
+        "type": "international"
+    }
+]

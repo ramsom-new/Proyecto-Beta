@@ -1,0 +1,132 @@
+/* --- Paleta de Colores Moderna y Adaptable (Claro/Oscuro) --- */
+
+:root {
+    --primary-color: #007bff;
+    --secondary-color: #1a6fba;
+    --text-color-light: #212529;
+    --text-color-dark: #e8eaed;
+    --bg-color-light: #f7f9fc;
+    --bg-color-dark: #0e1117; /* Usar el fondo oscuro por defecto de Streamlit */
+    --card-bg-light: #ffffff;
+    --card-bg-dark: #1c2532;
+    --border-color-light: #d6e0ea;
+    --border-color-dark: #262730;
+}
+
+/* --- Estilos Base --- */
+body {
+    font-family: 'sans-serif';
+}
+
+/* --- Modo Claro (por defecto) --- */
+body {
+    color: var(--text-color-light);
+}
+
+[data-testid="stAppViewContainer"] {
+    background-color: var(--bg-color-light);
+}
+
+[data-testid="stSidebar"] {
+    background-color: var(--card-bg-light);
+    border-right: 1px solid var(--border-color-light);
+}
+
+h1 {
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+h2, h3 {
+    color: var(--secondary-color);
+}
+
+/* --- Estilos para las Métricas --- */
+.stMetric {
+    background-color: var(--card-bg-light);
+    border: 1px solid var(--border-color-light);
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.06);
+    text-align: center;
+}
+
+.stMetric [data-testid="stMetricValue"] {
+    font-size: 3rem;
+    color: var(--primary-color);
+    font-weight: 700;
+}
+
+.stMetric [data-testid="stMetricLabel"] {
+    font-size: 1.1rem;
+    color: #555;
+}
+
+/* --- Estilos para Pestañas (Tabs) --- */
+.stTabs [data-baseweb="tab-list"] {
+    gap: 16px;
+}
+
+.stTabs [data-baseweb="tab"] {
+    height: 50px;
+    white-space: pre-wrap;
+    background-color: transparent;
+    border-radius: 4px 4px 0px 0px;
+    border-bottom: 2px solid var(--border-color-light);
+    padding: 10px;
+    color: #555;
+}
+
+.stTabs [aria-selected="true"] {
+    background-color: var(--card-bg-light);
+    color: var(--primary-color);
+    border-bottom: 2px solid var(--primary-color);
+}
+
+/* --- Estilos para Expanders --- */
+.st-emotion-cache-134p1as {
+    background-color: var(--card-bg-light);
+    border-radius: 8px;
+    border: 1px solid var(--border-color-light);
+}
+
+
+/* --- Media Query para Modo Oscuro --- */
+@media (prefers-color-scheme: dark) {
+    body {
+        color: var(--text-color-dark);
+    }
+
+    [data-testid="stAppViewContainer"] {
+        background-color: var(--bg-color-dark);
+    }
+
+    [data-testid="stSidebar"] {
+        background-color: #0e1117; /* Fondo oscuro de Streamlit */
+        border-right: 1px solid var(--border-color-dark);
+    }
+
+    .stMetric {
+        background-color: var(--card-bg-dark);
+        border: 1px solid var(--border-color-dark);
+    }
+
+    .stMetric [data-testid="stMetricLabel"] {
+        color: #a0a0a0;
+    }
+
+    .stTabs [data-baseweb="tab"] {
+        border-bottom: 2px solid var(--border-color-dark);
+        color: #a0a0a0;
+    }
+
+    .stTabs [aria-selected="true"] {
+        background-color: var(--card-bg-dark);
+        color: var(--primary-color);
+    }
+
+    .st-emotion-cache-134p1as {
+        background-color: var(--card-bg-dark);
+        border: 1px solid var(--border-color-dark);
+    }
+}

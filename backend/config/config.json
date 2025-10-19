@@ -1,0 +1,17 @@
+{
+    "topics": [
+        "noticias de deportes",
+        "noticias de política",
+        "noticias de economía",
+        "noticias de tecnología",
+        "noticias de entretenimiento y espectáculos",
+        "noticias de salud y bienestar",
+        "noticias de ciencia y medio ambiente"
+    ],
+    "models": {
+        "sentiment": "pysentimiento/robertuito-sentiment-analysis",
+        "ner": "es_core_news_lg",
+        "summarization": "vgaraujov/t5-base-spanish",
+        "zero_shot": "facebook/bart-large-mnli"
+    }
+}
